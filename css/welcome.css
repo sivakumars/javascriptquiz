@@ -1,0 +1,147 @@
+*{
+	box-sizing:border-box;
+	/* border: 1px solid red; */ 
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+}
+
+body{
+	background-color: #f2f2f2;
+	position: relative;
+	font-size: 65%;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+    flex-direction: column;
+}
+
+/******************************
+styles for Welcome Overlay
+*******************************/
+
+.overlay{
+	background-color: #282828;
+	width: 100%;
+	font-size: 1.6em;
+	font-family: Arial, Helvetica, 'Helvetica Neue', Verdana, sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.welcome{
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+.welcome h1{
+	margin: 0;
+	font-family: 'Oregano' , cursive;
+	font-size: 3em;
+	font-weight: normal;
+	color: #E64C5D;
+}
+
+header{
+	padding: 2px;
+	text-align: center;
+}
+
+.content{
+	width: 60%;
+	margin: 0 auto;
+	padding: 0.5em;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+.welcome footer{
+	text-align: center;
+	color: #fff;
+}
+
+footer a{
+	color: #11a8ab; 
+}
+
+.btn{
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: center;	
+}
+
+.btn a{
+	text-decoration: none;
+}
+
+.btn .start{
+	padding: 5px 15px;
+	min-height: 0.75em;
+	width: 170px;
+	margin: 0 auto;
+	color: #000;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #282828;
+	border-radius: 4px;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+.welcome .start:hover{
+	background-color: #11a8ab;
+	border: 0.25px solid #11a8ab;
+	font-weight: bolder;
+}
+
+hr{
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+	background-image:    -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+	background-image:     -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+	background-image:      -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+
+
+/*****************
+Media queries
+******************/
+
+@media screen and (min-width: 993px){
+	.overlay{
+		height: 100%;
+	}	
+}
+
+@media screen and (max-width: 992px){
+	.container{
+		height: 90%;
+	}	
+}
+
+@media screen and (max-width: 762px){
+	.content{
+		width: 95%;
+	}
+
+	.welcome h1{
+		font-size: 1.75em;
+	}
+
+}

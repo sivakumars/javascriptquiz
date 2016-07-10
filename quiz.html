@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz-Application</title>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/prism.css">
+	<link href='http://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+    <!--A wrapper for the Quizzing section -->
+	<div class="wrapper">
+		<!--Element to deactivate the Quiz area by dropping a transparent background-->
+		<article class="deactivate">			
+		</article>
+		
+		<article class="show-feedback">
+			<div class="feedback">
+				<h2></h2>
+			</div>
+		</article>
+
+		<section class="quiz-wrap">
+			<header class="quiz-header">
+				<h2>JAVASCRIPT QUIZ</h2>
+			</header>
+			<div class="quiz-container">
+				<div class="question-count">Question <span></span></div>
+				<article class="quiz-area">
+				</article>
+			</div>		
+		</section>
+		<aside class="score-wrap">
+			<p>Score: <span id="score">0</span></p>
+		</aside>		
+		<article class="continue">
+			<div><h1>Continue >></h1></div>
+		</article>
+		<!-- Modal Information Box -->
+		<div class="game-over" id="modal">
+			<div class="content">
+				<h3>GAME OVER</h3>
+				<div>
+					<p></p>				
+					<p>PLAY AGAIN?</p>
+					<a href="./quiz.html">YES!</a>
+					<a href="./index.html">NO</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="sticky-quiz-footer bg-orange">
+			<ul class="quiz-results">
+			</ul>
+	</footer>	
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+</body>
+</html>
